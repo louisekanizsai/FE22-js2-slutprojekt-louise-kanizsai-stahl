@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../modules/profile.ts" type="module"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Min profil</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Din profil</h1>
+    <div class="nav-info">
+      <button class="feed-btn">Till flödet</button>
+      <button class="log-out-btn">Logga ut</button>
+      <button id="delete-account">Radera mitt konto</button>
+      <div id="confirm-delete-popup" class="popup">
+        <div class="popup-content">
+          <p>Är du säker på att du vill radera ditt konto? Detta kan inte ångras.</p>
+          <div class="popup-buttons">
+            <button id="confirm-delete">Ja</button>
+            <button id="cancel-delete">Nej</button>
+          </div>
+        </div>
+      </div>
+      <div class="userinfo"></div>
+    </div>
+  </div>
+
+  <div class="profile-container">
+    <div class="profile-posts">
+      <form id="newPostForm">
+        <input type="text" placeholder="Berätta något kul" id="new-post">
+        <button>Publicera</button>
+      </form>
+  
+      <div id="my-posts"></div>
+    </div>
+
+    <div class="user-card">
+      <h3></h3>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

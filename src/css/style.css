@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(234, 246, 246);
+}
+
+/* index */
+
+form h2, h1, .username, h3 {
+    color: #428f8d;
+}
+
+label img {
+    width: 50px;
+}
+
+#loginForm, #createUserForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8d9d9;
+    border: 5px solid #a0c2c2;
+    width: 350px;
+    margin: 20px auto;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+}
+
+#loginForm input, #createUserForm input, #newPostForm input {
+    margin-bottom: 10px;
+    padding: 0.6em;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#loginForm button, #createUserForm button, #newPostForm button {
+    background-color: #a0c2c2;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#loginForm button:hover,
+#createUserForm button:hover,
+#newPostForm button:hover {
+  background-color: #75a4a4;
+}
+
+#loginForm h2, #createUserForm h2 {
+    margin-bottom: 10px;
+}
+
+#createUserForm div {
+    text-align: center;
+}
+
+/* Flödet */
+
+.header {
+    border-bottom: 5px solid #a0c2c2;
+    background-color: #e8d9d9;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 5vw;
+}
+
+.feed-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feed {
+    max-width: 70%;
+}
+
+.nav-info {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+.nav-info button, .nav-info div {
+    margin: 0 10px 0 0;
+}
+
+.nav-info button {
+    background-color: #a0c2c2;
+    border-radius: 6px;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-info button:hover {
+    background-color: #75a4a4;
+  }
+
+.userinfo {
+    display: flex;
+    align-items: center;
+} 
+
+.userinfo > p {
+    margin-right: 5px;
+    color:rgba(0, 0, 0, 0.792);
+}
+
+.userinfo > img {
+    width: 30px;
+}
+
+.all-users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-users a {
+    cursor: pointer;
+    width: auto;
+    margin: 5px 0px;
+    text-decoration: underline;
+    color: #75a4a4;
+}
+
+.post {
+    border: 5px solid #a0c2c2;
+    margin: 10px 0px;
+    border-radius: 4px;
+}
+
+.userNameAndPic {
+    display: flex;
+    align-items: center;
+    background-color: #e8d9d9;
+    padding-left: 10px;
+}
+
+.username {
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.profilepic {
+    height: 30px;
+}
+
+.message {
+    padding: .5em 1em;
+    background-color: #f0f0f0;
+    color:rgba(0, 0, 0, 0.757)
+}
+
+.timestamp {
+    font-style: italic;
+    text-align: right;
+    padding: .5em 1em;
+    color: rgba(0, 0, 0, 0.509);
+    font-size: .9em;
+    background-color: #f0f0f0;
+}
+
+/* profiler */
+
+#newPostForm input {
+    border: 5px solid #e8d9d9;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-card {
+    margin-top: 10px;
+    padding: 1em;
+    border: 5px solid #a0c2c2;
+    background-color: #e8d9d9;
+}
+
+.user-card h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#clicked-user-posts, .profile-posts {
+    max-width: 60%;
+}
+
+#newPostForm {
+    margin-top: 10px;
+}
+
+#newPostForm button {
+    cursor: pointer;
+}
+
+/* popup-ruta för att ta bort sitt konto */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popup-content {
+    background-color: #eff3f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(114, 122, 126);
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    left: 25vw;
+    top: 20px;
+  }
+  
+  .popup-buttons button {
+    margin-top: 20px;
+  }
